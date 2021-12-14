@@ -21,3 +21,114 @@ cat DevOps7AM/.git/config
 [branch "main"]
         remote = https://github.com/banka5b9/DevOps7AM.git
         merge = refs/heads/main
+        
+        
+https://github.com/banka5b9/DevOps7AM.git
+
+cd testrepo/
+
+$ git init
+Initialized empty Git repository in G:/git_practice/testrepo/.git/
+
+$ ls -al
+total 4
+drwxr-xr-x 1 banka 197620 0 Dec 14 19:55 ./
+drwxr-xr-x 1 banka 197620 0 Dec 14 19:52 ../
+drwxr-xr-x 1 banka 197620 0 Dec 14 19:55 .git/
+
+
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+
+$ touch test.java
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add .
+
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.java
+
+
+$ git commit -m "this is second way for creating repository"
+[master (root-commit) 536ad21] this is second way for creating repository
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.java
+
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+    git remote add <name> <url>
+and then push using the remote name
+    git push <name>
+
+$ git remote add origin https://github.com/banka5b9/DevOps7am2.git
+
+
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://github.com/banka5b9/DevOps7am2.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+$ git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/banka5b9/DevOps7am2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+$ cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://github.com/banka5b9/DevOps7am2.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+
+        
