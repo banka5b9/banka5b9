@@ -1,0 +1,8 @@
+git clone https://github.com/banka5b9/DevOps7AM.git
+cd DevOps7AM/
+git status
+git add .
+git status
+git commit -m "this is second commit"
+git status
+git push -u https://github.com/banka5b9/DevOps7AM.git
