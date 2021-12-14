@@ -1,0 +1,46 @@
+git clone https://github.com/banka5b9/DevOps7AM.git
+vi DevOps7AM/samplefile
+cat DevOps7AM/samplefile
+git status
+cd DevOps7AM/
+git status
+git add .
+git status
+git commit -m "this is second commit"
+git status
+git push -u https://github.com/banka5b9/DevOps7AM.git
+history
+ls -al
+cd .git/
+ls
+cat config
+cd ..
+cd ..
+mkdir  testrepo
+ls
+cd DevOps7AM/
+cd ..
+cd testrepo/
+cd ..
+cd testrepo/
+git init
+ls -al
+cat .git/config
+ls
+touch test.java
+git status
+git add .
+git status
+git commit -m "this is second way for creating repository"
+git push
+git remote add origin https://github.com/banka5b9/DevOps7am2.git
+cat .git/config
+git push
+git push --set-upstream origin master
+cat .git/config
+touch login.java
+git add .
+git commit -m "add secong secod file"
+git push
+
+
