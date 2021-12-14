@@ -6,3 +6,18 @@ git status
 git commit -m "this is second commit"
 git status
 git push -u https://github.com/banka5b9/DevOps7AM.git
+---------------------------------------------------------------------------------------------
+cat DevOps7AM/.git/config
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = https://github.com/banka5b9/DevOps7AM.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+        remote = https://github.com/banka5b9/DevOps7AM.git
+        merge = refs/heads/main
